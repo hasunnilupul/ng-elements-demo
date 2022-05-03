@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-el": "ng build --output-hashing=none",
+    "package-el": "bash cat dist/ng-elements-demo/main.js dist/ng-elements-demo/polyfills.js dist/ng-elements-demo/runtime.js | gzip > vowelpicker.js.gz",
+    "build-and-package": "npm run build-el && npm run package-el"
   },
   "private": true,
   "dependencies": {
@@ -14,6 +17,7 @@
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",
     "@angular/core": "~13.3.0",
+    "@angular/elements": "^13.3.5",
     "@angular/forms": "~13.3.0",
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",

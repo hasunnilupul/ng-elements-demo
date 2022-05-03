@@ -1,0 +1,13 @@
+.vowelPickerCard{
+  width: 100px;
+  height: 100px;
+  background-color: slategray;
+  color: white;
+  text-align:center;
+  display: inline-block;
+  margin-right:20px
+}
+
+.vowelPickerCard p{
+  font-size: 2em;
+}

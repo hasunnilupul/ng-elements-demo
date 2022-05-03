@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-elements-demo';
+
+  letterSelected(letter: string) {
+    console.log(`The user selected a letter ${letter}`);
+  }
 }
